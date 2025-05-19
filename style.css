@@ -90,7 +90,7 @@ display:grid;
 .Read{
     grid-area:read;
 }
-.Title, .Author, .Pages, .Read{
+.Title, .Author, .Pages, .Read, .out{
     place-self:center;
     text-align: center;
     width:100%;
@@ -130,4 +130,26 @@ cursor:pointer;
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.chosen{
+    transform: translateY(-0.5rem);
+    box-shadow:1.5rem 2.5rem 0.5rem lightgrey;
+}
+.out{
+    position:absolute;
+    width:15%;
+    height:10%;
+    top:55%;
+    right:10%;
+    cursor:pointer;
+}
+.out:hover{
+    box-shadow:0 0.3rem 0.6rem grey,
+    0.3rem 0 0.6rem grey,
+    -0.3rem 0 0.6rem grey,
+    0 -0.3rem 0.6rem grey;
+}
+.clicked{
+    background-color:black;
+    color:white;
 }
